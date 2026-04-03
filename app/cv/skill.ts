@@ -9,6 +9,7 @@ export const web = [
   "TailwindCSS",
 ];
 
+
 export const database = ["SQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"];
 export const others = ["Networking", "System Admnin", "Git/GithUB"];
 

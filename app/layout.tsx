@@ -33,11 +33,13 @@ export default function RootLayout({
       >
         <Background>
           <div className="relative pb-5">
-            <aside className="fixed left-4 min-h-full">
+            {/* Navigation - Fixed on desktop, sticky on mobile */}
+            <div className="lg:fixed lg:left-4 lg:top-1/2 lg:-translate-y-1/2 z-50">
               <Navigations />
-            </aside>
+            </div>
 
-            <main>{children}</main>
+            {/* Main content with responsive padding */}
+            <main className="lg:pl-24 xl:pl-32">{children}</main>
 
             <Footer />
           </div>
