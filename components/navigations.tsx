@@ -26,7 +26,7 @@ export default function Navigations() {
   const navItems = [
     { href: "/", icon: User, label: "Profile" },
     { href: "/cv", icon: FileText, label: "Curriculum Vitae" },
-    { href: "/projects", icon: FolderGit2, label: "Projects" },
+    // { href: "/projects", icon: FolderGit2, label: "Projects" },
     { href: "/experiences", icon: Briefcase, label: "Experiences" },
   ];
 

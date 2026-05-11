@@ -12,7 +12,7 @@ import {
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
 
-const links = ["profile", "projects", "experience", "cv"];
+const links = ["profile", "experience", "cv"];
 
 function Header() {
   return (
