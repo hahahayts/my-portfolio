@@ -12,7 +12,7 @@ import {
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
 
-const links = ["profile", "experience", "cv"];
+const links = ["experiences", "cv"];
 
 function Header() {
   return (
@@ -61,8 +61,15 @@ export default function Footer() {
                 </p>
               </div>
               <div className="flex justify-start items-center gap-3 sm:gap-5">
-                <Social icon={Github} />
-                <Social icon={Linkedin} />
+                <Link href="https://github.com/hahahayts" target="_blank">
+                  <Social icon={Github} />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/john-jeric-polison-850bb3407/"
+                  target="_blank"
+                >
+                  <Social icon={Linkedin} />
+                </Link>
                 <Social icon={Mail} />
               </div>
             </div>
@@ -75,6 +82,12 @@ export default function Footer() {
                   Quick Links
                 </p>
                 <div className="flex flex-col space-y-1.5 sm:space-y-2">
+                  <Link href="/">
+                    <span className="text-sm sm:text-base hover:text-sky-500 transition-colors">
+                      Profile
+                    </span>
+                  </Link>
+
                   {links.map((link) => (
                     <Link key={link} href={`/${link}`}>
                       <span className="text-sm sm:text-base hover:text-sky-500 transition-colors">
