@@ -5,10 +5,9 @@ interface Props {
   certification: string;
   issuer: string;
   year: string;
-  status: string;
 }
 
-function CertificationItem({ certification, issuer, year, status }: Props) {
+function CertificationItem({ certification, issuer, year }: Props) {
   return (
     <div className="flex gap-3 md:gap-5">
       <div className="flex flex-col items-center gap-1">
@@ -28,9 +27,9 @@ function CertificationItem({ certification, issuer, year, status }: Props) {
               <Calendar size={14} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
               <p className="text-xs sm:text-sm md:text-base">{year}</p>
             </div>
-            <div className="text-xs sm:text-sm bg-blue-800 text-blue-300 py-0.5 px-2 md:py-1 md:px-3 rounded-full w-fit">
+            {/* <div className="text-xs sm:text-sm bg-blue-800 text-blue-300 py-0.5 px-2 md:py-1 md:px-3 rounded-full w-fit">
               <p className="capitalize whitespace-nowrap">{status}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -55,22 +54,15 @@ export default function Certification() {
         </CardTitle>
         <div className="space-y-3 md:space-y-4">
           <CertificationItem
-            certification="AWS Certified Cloud Practitioner"
-            issuer="Amazon Web Services"
-            year="2024"
-            status="active"
+            certification="Web Development Fundamentals"
+            issuer="IBM SkillsBuild"
+            year="2026"
           />
           <CertificationItem
-            certification="Meta Frontend Developer"
-            issuer="Meta"
-            year="2023"
-            status="completed"
-          />
-          <CertificationItem
-            certification="Google IT Support"
-            issuer="Google"
-            year="2023"
-            status="completed"
+            certification="Microsoft Cybersecurity Course: Security,
+Compliance, and Identity Fundamentals "
+            issuer="Technical Education and Skills Development Authority (TESDA)"
+            year="2026"
           />
         </div>
       </CardContent>
