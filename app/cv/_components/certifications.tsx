@@ -59,6 +59,11 @@ export default function Certification() {
             year="2026"
           />
           <CertificationItem
+            certification="Cybersecurity Fundamentals "
+            issuer="IBM SkillsBuild"
+            year="2026"
+          />
+          <CertificationItem
             certification="Microsoft Cybersecurity Course: Security,
 Compliance, and Identity Fundamentals "
             issuer="Technical Education and Skills Development Authority (TESDA)"
